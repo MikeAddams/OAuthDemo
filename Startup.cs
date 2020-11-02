@@ -43,8 +43,8 @@ namespace AuthDemo
                 })
                 .AddGitHub(options =>
                 {
-                    options.ClientId = "f4cc8d48a8c16c9b2c14";
-                    options.ClientSecret = "52ebf267d22886c8023fb2d9f38d9406f9082e79";
+                    options.ClientId = Configuration["Authentication:GitHub:AppId"];
+                    options.ClientSecret = Configuration["Authentication:GitHub:AppSecret"];
                 });
         }
 
